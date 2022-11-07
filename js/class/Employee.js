@@ -1,7 +1,6 @@
 class Employee extends WorkingPerson {
   constructor(argName, argLastName, argHourlyPay) {
-    this.firsName = argName;
-    this.lastName = argLastName;
+    super(argName, argLastName);
     this.hourlyPay = argHourlyPay;
     // darbo valandoms apskaityti reiksme
     this.hoursWorked = 0;
@@ -20,15 +19,15 @@ class Employee extends WorkingPerson {
   }
 }
 
-const em1 = new Employee('James', 'Bond', 10);
-const em2 = new Employee('Hana', 'Smith', 15);
-console.log('em1 ===', em1);
-em2.work(10);
-em2.work(100);
-em1.work(10);
-em1.work(50);
-console.log('em1.hoursWorked ===', em1.hoursWorked);
-console.log('em2.hoursWorked ===', em2.hoursWorked);
+// const em1 = new Employee('James', 'Bond', 10);
+// const em2 = new Employee('Hana', 'Smith', 15);
+// console.log('em1 ===', em1);
+// em2.work(10);
+// em2.work(100);
+// em1.work(10);
+// em1.work(50);
+// console.log('em1.hoursWorked ===', em1.hoursWorked);
+// console.log('em2.hoursWorked ===', em2.hoursWorked);
 
-console.log('em1.calcPay() ===', em1.calcPay());
-console.log('em2.calcPay() ===', em2.calcPay());
+// console.log('em1.calcPay() ===', em1.calcPay());
+// console.log('em2.calcPay() ===', em2.calcPay());
