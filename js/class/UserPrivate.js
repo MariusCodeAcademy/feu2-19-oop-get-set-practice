@@ -4,6 +4,8 @@ class UserPrivate {
   // User psiaudo private property
   // private id
   #id;
+  name;
+  town;
   constructor(argId, argName, argTown) {
     this.#id = argId;
     this.name = argName;
