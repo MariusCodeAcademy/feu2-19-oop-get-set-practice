@@ -55,3 +55,5 @@ function generateAndAddLi(email, pay) {
   liEl.textContent = `${email} to be payed ${pay} eur`;
   ulEl.append(liEl);
 }
+
+workersArr.forEach(console.log);
