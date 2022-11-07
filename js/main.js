@@ -23,37 +23,41 @@ const workArr = [
   new Job('Navigation mobile', 200), // 4
 ];
 
-// priskirti freelanceriam darbus
-workersArr[3].addProject(workArr[0]);
-workersArr[3].addProject(workArr[1]);
-workersArr[4].addProject(workArr[2]);
-workersArr[4].addProject(workArr[3]);
-workersArr[4].addProject(workArr[4]);
-// fr1.addProject({ name: 'Mobile layout', pay: 500 });
+const workList = new WorkersList();
+workList.addWorker(workersArr[0]);
+workList.addWorker(workersArr[4]);
+// workList.addWorker({ name: 'Mike', surname: 'Till' });
+workList.addWorkerList(workArr);
+console.log('workList.list ===', workList.list);
 
-// uzbaigti pirmaji darba
-workersArr[3].finishProject(workArr[0]);
-workersArr[3].finishProject(workArr[1]);
-workersArr[4].finishProject(workArr[2]);
-workersArr[4].finishProject(workArr[3]);
-
-// darbus dirba employee
-workersArr[0].work(100);
-workersArr[1].work(160);
-workersArr[2].work(180);
-
-// skaiciuojam algalapius
-workersArr.forEach((worker) => {
-  const workerName = worker.fullname;
-  const pay = worker.calcPay();
-  console.log(`${workerName} to be payed ${pay} eur`);
-  generateAndAddLi(workerName, pay);
-});
-
-function generateAndAddLi(email, pay) {
-  const liEl = document.createElement('li');
-  liEl.textContent = `${email} to be payed ${pay} eur`;
-  ulEl.append(liEl);
+{
+  // // priskirti freelanceriam darbus
+  // workersArr[3].addProject(workArr[0]);
+  // workersArr[3].addProject(workArr[1]);
+  // workersArr[4].addProject(workArr[2]);
+  // workersArr[4].addProject(workArr[3]);
+  // workersArr[4].addProject(workArr[4]);
+  // // fr1.addProject({ name: 'Mobile layout', pay: 500 });
+  // // uzbaigti pirmaji darba
+  // workersArr[3].finishProject(workArr[0]);
+  // workersArr[3].finishProject(workArr[1]);
+  // workersArr[4].finishProject(workArr[2]);
+  // workersArr[4].finishProject(workArr[3]);
+  // // darbus dirba employee
+  // workersArr[0].work(100);
+  // workersArr[1].work(160);
+  // workersArr[2].work(180);
+  // // skaiciuojam algalapius
+  // workersArr.forEach((worker) => {
+  //   const workerName = worker.fullname;
+  //   const pay = worker.calcPay();
+  //   console.log(`${workerName} to be payed ${pay} eur`);
+  //   generateAndAddLi(workerName, pay);
+  // });
+  // function generateAndAddLi(email, pay) {
+  //   const liEl = document.createElement('li');
+  //   liEl.textContent = `${email} to be payed ${pay} eur`;
+  //   ulEl.append(liEl);
+  // }
+  // workersArr.forEach(console.log);
 }
-
-workersArr.forEach(console.log);
