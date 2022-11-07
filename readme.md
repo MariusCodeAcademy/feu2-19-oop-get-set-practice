@@ -34,3 +34,4 @@
 
 1. perrasom esama main.js, panaudodami WorkersList, JobList. 
 2. panaudoami GenHtml sugeneruojam darbuotojus i sarasa html.
+3. panaudoami GenHtml sugeneruojam darbuotojus i lentele html.
