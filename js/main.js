@@ -23,10 +23,12 @@ const jobArr = [
   new Job('Navigation mobile', 200), // 4
 ];
 
-const workList = new WorkersList();
-// workList.addWorker({ name: 'Mike', surname: 'Till' });
-workList.addWorkerList(workersArr);
-console.log('workList.list ===', workList.list);
+// const workList = new WorkersList();
+// // workList.addWorker({ name: 'Mike', surname: 'Till' });
+// workList.addWorkerList(workersArr);
+// console.log('workList.list ===', workList.list);
+
+console.log('jobArr ===', jobArr);
 
 {
   // // priskirti freelanceriam darbus
