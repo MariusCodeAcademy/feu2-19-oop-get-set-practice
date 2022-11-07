@@ -15,4 +15,6 @@
 
 1. sukurti klase JobList.
 2. klase turi privacia savybe list
-3. klase truti metoda addJob(). Kuris prideda darba i list. jei tai yra paga Job klase sukurtas darbas. 
+3. klase turi metoda addJob(). Kuris prideda darba i list. jei tai yra paga Job klase sukurtas darbas.
+4. sukurti metoda showJobs() kuri atvaizduoja visus darbus.
+
