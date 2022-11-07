@@ -9,5 +9,9 @@ class WorkingPerson {
     return emailString;
   }
 
+  get fullname() {
+    return `${this.firsName} ${this.lastName}`;
+  }
+
   calcPay() {}
 }

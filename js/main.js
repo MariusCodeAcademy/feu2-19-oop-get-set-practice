@@ -44,7 +44,7 @@ workersArr[2].work(180);
 
 // skaiciuojam algalapius
 workersArr.forEach((worker) => {
-  const workerName = worker.email;
+  const workerName = worker.fullname;
   const pay = worker.calcPay();
   console.log(`${workerName} to be payed ${pay} eur`);
   generateAndAddLi(workerName, pay);
