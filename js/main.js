@@ -1,6 +1,7 @@
 'use strict';
 console.log('main.js');
 const ulEl = document.getElementById('ul');
+const outEl = document.getElementById('out');
 
 // const w1 = new WorkingPerson('Jane', 'Doe');
 // console.log('w1.email ===', w1.email);
@@ -13,6 +14,8 @@ const workersArr = [
   new Freelancer('Serbentautas', 'Bordiuras'), // 3
   new Freelancer('Lenteja', 'Ceses'), // 4
 ];
+
+GenHtml.generatePeople(workersArr, outEl);
 
 // sukuriam darba
 const jobArr = [
