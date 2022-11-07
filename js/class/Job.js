@@ -1,5 +1,5 @@
 class Job {
-  #id;
+  // #id;
   #done;
   #title;
   #price;
@@ -8,5 +8,17 @@ class Job {
     this.#title = argTitle;
     this.#price = argPrice;
     this.#done = false;
+  }
+
+  get price() {
+    return this.#price;
+  }
+
+  get isDone() {
+    return this.#done;
+  }
+
+  completeJob() {
+    this.#done = true;
   }
 }

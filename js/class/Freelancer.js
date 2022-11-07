@@ -9,6 +9,27 @@ class Freelancer extends WorkingPerson {
    * @param job - instance of Job
    */
   addProject(job) {
-    this.projects.push(job);
+    // patikrinti ar darbas sukurtas pagal JOB klase
+    if (job instanceof Job) {
+      this.projects.push(job);
+    } else {
+      throw new Error('Not valid job');
+    }
+  }
+
+  finishProject(job) {
+    if (job instanceof Job) {
+      // pabaigti darba
+      job.completeJob();
+    } else {
+      throw new Error('Not valid job');
+    }
+  }
+
+  calcPay() {
+    // surasti visus pabaigtus darbus
+    // sudeti pabaigtu darbu kainas
+    // istrinti pabaigtus is projects masyvo
+    // grazinti moketina suma
   }
 }
