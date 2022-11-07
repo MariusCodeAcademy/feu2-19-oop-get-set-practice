@@ -29,13 +29,13 @@ class Freelancer extends WorkingPerson {
   calcPay() {
     // surasti visus pabaigtus darbus
     const comletedJobs = this.projects.filter((job) => job.isDone);
-    console.log('comletedJobs ===', comletedJobs);
+    // console.log('comletedJobs ===', comletedJobs);
     // sudeti pabaigtu darbu kainas
     const doneJobPay = comletedJobs.reduce((total, job) => total + job.price, 0);
-    console.log('doneJobPay ===', doneJobPay);
+    // console.log('doneJobPay ===', doneJobPay);
     // istrinti pabaigtus is projects masyvo
     this.projects = this.projects.filter((job) => !job.isDone);
-    console.log('this.projects ===', this.projects);
+    // console.log('this.projects ===', this.projects);
     // grazinti moketina suma
     return doneJobPay;
   }
