@@ -1,5 +1,5 @@
 class WorkersList {
-  list = [];
+  #list = [];
 
   addWorker(workerObj) {
     // if (workerObj instanceof Employee || workerObj instanceof Freelancer) {
@@ -12,11 +12,14 @@ class WorkersList {
     if (!(workerObj instanceof Employee) && !(workerObj instanceof Freelancer)) {
       throw new Error('Only valid workers please');
     }
-
-    this.list.push(workerObj);
+    this.#list.push(workerObj);
   }
 
   addWorkerList(arr) {
-    arr.forEach(this.addWorker);
+    arr.forEach((w) => this.addWorker(w));
+  }
+
+  get list() {
+    return this.#list;
   }
 }
