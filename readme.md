@@ -27,6 +27,7 @@
 
 1. sukurti kase GenHtml. 
 2. klase turi statini metoda generatePeople(arr, dest), kuris is gauto masyvo i dest sugeneruoja rikiuota sarasa. arr yra Freelancer arba Employee masyvas.
+3. klase turi statini metoda generatePeopleTable(arr, dest). is gauto arr masyvo sugeneruoja lentele. Lenteleje turi stulpelius: fullname, worker, employee. Priklausomai nuo darbuotojo tipo, stupleliuose worker, employee generuojam "X".
 
 
 ## bendras funkcionalumas
